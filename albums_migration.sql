@@ -9,5 +9,6 @@ CREATE TABLE albums (
     release_date INT UNSIGNED,
     sales FLOAT UNSIGNED NOT NULL,
     genre VARCHAR(150) DEFAULT 'Bluegrass',
-    PRIMARY KEY (id)
+    PRIMARY KEY (id),
+    UNIQUE (artist, name)
 );
